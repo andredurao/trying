@@ -1,4 +1,9 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include <ruby.h>
+#include <assert.h>
+
+#include "trie.h"
 
 /*
  * This structure holds the size of the pointer (to make cleanup easier) and
