@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["André Durão"]
   spec.email         = ["andreluisdurao@gmail.com"]
 
-  spec.description   = "Trie tree in ruby" 
-  spec.summary       = "Native extension trie tree in ruby with prefix search" 
+  spec.description   = "Trie tree in ruby"
+  spec.summary       = "Native extension trie tree in ruby with prefix search"
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.extensions    = %w[ext/trie/extconf.rb]
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
