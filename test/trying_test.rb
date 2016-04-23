@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'trying'
 
 describe Trying do
 
@@ -6,8 +7,8 @@ describe Trying do
     refute_nil ::Trying::VERSION
   end
 
-  it "should do something useful" do
-    assert false
+  it "should have a Trie class on it" do
+    Trying.class.must_equal Module
   end
 
 end
