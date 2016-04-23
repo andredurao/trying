@@ -102,7 +102,7 @@ trie_release(VALUE self) {
  */
 
 void
-Init_my_malloc(void) {
+Init_trie(void) {
     VALUE cTrie;
 
     cTrie = rb_const_get(rb_cObject, rb_intern("Trie"));
