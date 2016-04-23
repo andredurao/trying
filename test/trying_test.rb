@@ -1,11 +1,13 @@
 require 'test_helper'
 
-class TryingTest < Minitest::Test
-  def test_that_it_has_a_version_number
+describe Trying do
+
+  it "have a version" do
     refute_nil ::Trying::VERSION
   end
 
-  def test_it_does_something_useful
+  it "should do something useful" do
     assert false
   end
+
 end
