@@ -10,3 +10,5 @@
 *.gem
 *.swp
 tags
+/ext/trie/mkmf.log
+/ext/trie/Makefile
